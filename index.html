@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta property="og:image" content="https://i.postimg.cc/44YBySwr/preview.jpg">
+    <title>백지은 포트폴리오</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            AOS.init();
+        });
+    </script>
+
+    <div class="werp">
+
+        <header id="Header">
+            <h1 class="icon"><img src="img/smile_icon.png" alt="icon"></h1>
+            <ul class="nav">
+                <li><a href="#Main">MAIN</a></li>
+                <li><a href="#Portfolio">PORTFOLIO</a></li>
+                <li><a href="#About">ABOUT</a></li>
+            </ul>
+            <div class="more"><img src="img/more.png" alt="more"></div>
+        </header>
+        <div class="more_mune">
+            <div class="close"><img src="img/close.png" alt="close"></div>
+            <ul class="menu">
+                <li class="home_close"><a href="#Main">MAIN</a></li>
+                <li>PORTFOLIO
+                    <ul class="sub_menu">
+                        <li><a href="#pulmuone">PULMUONE</a></li>
+                        <li><a href="#kcc">KCC</a></li>
+                        <li><a href="#publisher">PUBLISHER</a></li>
+                    </ul>
+                </li>
+                <li>ABOUT
+                    <ul class="sub_menu">
+                        <li><a href="#skill">SKILL</a></li>
+                        <li><a href="#career">CAREER</a></li>
+                        <li><a href="#info">INFO</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script>
+            $(document).ready(function(){
+                //click
+                $("#Header .more").click(function(){
+                    $(".more_mune").stop().animate({"right":"0%"});
+                });
+
+                //close
+                $(".more_mune .close").click(function(){
+                    $(".more_mune").stop().animate({"right":"-100%"},function(){
+                        category();
+                    });
+                    $(".more_mune .sub_menu").stop().slideUp(300);
+                    $(".more_mune > ul > li").removeClass("on")
+                });
+                $(".home_close").click(function(){
+                    $(".more_mune").stop().animate({"right":"-100%"},function(){
+                        category();
+                    });
+                    $(".more_mune .sub_menu").stop().slideUp(300);
+                    $(".more_mune > ul > li").removeClass("on")
+                });
+                $(".more_mune .sub_menu > li > a").click(function(){
+                    $(".more_mune").stop().animate({"right":"-100%"},function(){
+                        category();
+                    });
+                    $(".more_mune .sub_menu").stop().slideUp(300);
+                    $(".more_mune > ul > li").removeClass("on")
+                });
+                
+                //sub menu
+                $(".more_mune > ul > li").click(function(event){
+                var check = $(this).hasClass("on");
+                if(check){
+                    $(".more_mune .sub_menu").stop().slideUp(300);
+                    $(".more_mune > ul > li").removeClass("on")
+                    }
+                else{
+                    $(".more_mune > ul > li .sub_menu").stop().slideUp(300);
+                    $(".more_mune > ul > li").removeClass("on")
+                    
+                    $(this).children(".sub_menu").stop().slideDown(300);
+                    $(this).addClass("on");
+                    }
+                });
+            });
+        </script>
+
+        <section id="Main">
+            <h1>WEB PUBLISHER <br>
+                PORTFOLIO</h1>
+        </section>
+
+        <section id="Portfolio" data-aos="fade-up" data-aos-duration="3000">
+            <div class="list_werp">
+                <div class="port_slider">
+                    <ul class="slider_list">
+                        <li id="pulmuone" class="list_01">
+                            <div class="img_werp">
+                                <ul>
+                                    <li><a href="img/pulmuone_01.JPG" target="_blank">
+                                        <img src="img/pulmuone_01.JPG" alt="이미지">
+                                        <div class="bg">preview (click)</div>
+                                    </a></li>
+                                    <li>
+                                        <a href="img/pulmuone_02.JPG" target="_blank"><img src="img/pulmuone_02.JPG" alt="이미지">
+                                            <div class="bg">preview (click)</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/pulmuone_03.JPG" target="_blank"><img src="img/pulmuone_03.JPG" alt="이미지">
+                                            <div class="bg">preview (click)</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/pulmuone_04.jpg" target="_blank"><img src="img/pulmuone_04.jpg" alt="이미지">
+                                            <div class="bg">preview (click)</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text_box">
+                                <h1 class="title">PULMUONE <span class="point">(반응형 웹)</span></h1>
+                                <p class="text_01">소요기간 : 약 1주정도<br>
+                                    작업기여도 : 퍼블리싱 100%<br>
+                                작업시기 : 2022년</p>
+                                <p class="text_02">기존의 풀무원 사이트의 메인페이지와 일부 서브페이지를 리뉴얼 하여 반응형 웹으로 작업</p>
+                                <div class="btn"><a href="http://jieyn72.dothome.co.kr/pulmuone/" target="_blank">사이트 바로가기</a></div>
+                            </div>
+                        </li>
+                        <li id="kcc" class="list_02">
+                            <div class="img_werp">
+                                <ul>
+                                    <li><a href="img/kcc_01.jpg"><img src="img/kcc_01.jpg" alt="이미지">
+                                        <div class="bg">preview (click)</div></a></li>
+                                    <li><a href="img/kcc_02.JPG"><img src="img/kcc_02.JPG" alt="이미지">
+                                        <div class="bg">preview (click)</div></a></li>
+                                    <li><a href="img/kcc_03.JPG"><img src="img/kcc_03.JPG" alt="이미지">
+                                        <div class="bg">preview (click)</div></a></li>
+                                    <li><a href="img/kcc_04.jpg"><img src="img/kcc_04.jpg" alt="이미지">
+                                        <div class="bg">preview (click)</div></a></li>
+                                </ul>
+                            </div>
+                            <div class="text_box">
+                                <h1 class="title">KCC <span class="point">(반응형 웹)</span></h1>
+                                <p class="text_01">소요기간 : 약 2주정도<br>
+                                    작업기여도 : 퍼블리싱 100%<br>
+                                작업시기 : 2017년</p>
+                                <p class="text_02">기존의 KCC 사이트의 메인페이지와 일부 서브페이지를 리뉴얼 하여 반응형 웹으로 작업</p>
+                                <div class="btn"><a href="http://jieyn72.dothome.co.kr/kcc/" target="_blank">사이트 바로가기</a></div>
+                            </div>
+                        </li>
+                        <li id="publisher" class="list_03">
+                            <div class="img_werp">
+                                <ul>
+                                    <li><a href="img/publisher_01.JPG"><img src="img/publisher_01.JPG" alt="이미지">
+                                        <div class="bg">preview (click)</div></a></li>
+                                    <li><a href="img/publisher_02.JPG"><img src="img/publisher_02.JPG" alt="이미지">
+                                        <div class="bg">preview (click)</div></a></li>
+                                    <li><a href="img/publisher_03.JPG"><img src="img/publisher_03.JPG" alt="이미지">
+                                        <div class="bg">preview (click)</div></a></li>
+                                    <li><a href="img/publisher_04.jpg"><img src="img/publisher_04.jpg" alt="이미지">
+                                        <div class="bg">preview (click)</div></a></li>
+                                </ul>
+                            </div>
+                            <div class="text_box">
+                                <h1 class="title">PUBLISHER <span class="point">(반응형 웹)</span></h1>
+                                <p class="text_01">소요기간 : 약 2주정도<br>
+                                    작업기여도 : 퍼블리싱 100% <br>
+                                    작업시기 : 2017년</p>
+                                <p class="text_02">포트폴리오 소개사이트 시안을 보고 반응형 웹으로 작업</p>
+                                <div class="btn"><a href="http://jieyn72.dothome.co.kr/Publisher/" target="_blank">사이트 바로가기</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="btn_icon">
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="move">
+                        <p class="prev"><img src="img/next_icon.png" alt="icon"></p>
+                        <p class="next"><img src="img/next_icon.png" alt="icon"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            $(document).ready(function(){
+                ver = list = 0;
+                ver = s_wid = $(".port_slider").width();
+                ver = s_length = $(".slider_list > li").length;
+
+                function slider(){
+                    $(".btn_icon li").removeClass("on");
+                    $(".btn_icon li").eq(list).addClass("on");
+                    $(".slider_list").stop().animate({"margin-left":list * -s_wid});
+                }
+
+                $(".btn_icon li").click(function(){
+                    list = $(this).index();
+                    slider();
+                });
+
+                $(".prev").click(function(){
+                    if(list == 0){list = s_length-1;}
+                    else{list--;}
+                    slider();
+                });
+
+                $(".next").click(function(){
+                    if(list == s_length-1){list = 0;}
+                    else{list++;}
+                    slider();
+                });
+            });
+        </script>
+
+        <section id="About">
+            <div class="list_werp">
+                <div class="flip">
+                    <div id="skill" class="box box_1" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                        <h1>SKILL</h1>
+                        <div class="graph_werp">
+                            <ul>
+                                <li>
+                                    <h2>Photoshop</h2>
+                                    <div class="gradient_border graph">
+                                        <div class="graph_01">간단한 이미지 보정 및 편집 가능 <span class="percent">90%</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2>illustrator</h2>
+                                    <div class="gradient_border graph">
+                                        <div class="graph_02">웹사이트에 들어갈 아이콘 제작 및 수정 가능<span class="percent">85%</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2>HTML & CSS</h2>
+                                    <div class="gradient_border graph">
+                                        <div class="graph_03">시안을 보고 퍼블리싱 작업 및 반응형 구현가능<span class="percent">95%</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2>JavaScript (JQuery)</h2>
+                                    <div class="gradient_border graph">
+                                        <div class="graph_04">메뉴,탭,슬라이더 등 기본적인 동적기능 구현가능<span class="percent">85%</span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="career" class="box box_2" data-aos="flip-left" data-aos-delay="800" data-aos-duration="1000">
+                        <h1>CAREER</h1>
+                       <dl>
+                        <dt>[최종학력]</dt>
+                        <dd>
+                            2015.3~2017.2 | 서영대학교 | 뷰티코디네이션(전공심화) | 학사 졸업</dd>
+                       </dl>
+                       <dl>
+                        <dt>[교육사항]</dt>
+                        <dd>2017.5~2017.12 | 웹퍼블리셔 양성과정 | 더조은컴퓨터(일산) | 수료</dd>
+                       </dl>
+                       <dl>
+                        <dt>[경력사항]</dt>
+                        <dd>2018.1.29~2021.12.31 | Metanet M Platform | Publisher</dd>
+                        <dd>2022.1.1~재직중 | U base | Publisher</dd>
+                        <dd>총 경력 : 약 4년 7개월</dd>
+                       </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="About_02">
+            <div class="list_werp">
+                <div class="flip">
+                    <div id="info" class="box box_1" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000"> 
+                        <h1>BAEK JI EUN</h1>
+                        <img src="img/my_img.png" alt="이미지">
+                    </div>
+                    <div class="box box_2" data-aos="flip-left" data-aos-delay="800" data-aos-duration="1000">
+                        <ul>
+                            <li>name : 백지은</li>
+                            <li>date of birth : 1994.07.25</li>
+                            <li>mobile : 010-8549-6725</li>
+                            <li>E-mail : <a href="mailto:jieyn72@naver.com">jieyn72@naver.com</a></li>
+                            <li>address : 서울특별시 은평구 통일로 1045</li>
+                        </ul>
+                        <div class="btn"><a href="#" target="_blank">이력서 바로보기</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="Footer">
+            <div class="list_werp">
+                <table>
+                    <colgroup>
+                        <col width="40%">
+                        <col width="*">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="lt">PORTFOLIO INTRO </th> 
+                            <td><a href="http://jieyn72.dothome.co.kr/intro" target="_blank">jieyn72.dothome.co.kr/intro</a></td>
+                        </tr>
+                        <tr>
+                            <th class="lt">PULMUONE </th> 
+                            <td><a href="http://jieyn72.dothome.co.kr/pulmuone" target="_blank">jieyn72.dothome.co.kr/pulmuone</a></td>
+                        </tr>
+                        <tr>
+                            <th class="lt">KCC </th> 
+                            <td><a href="http://jieyn72.dothome.co.kr/kcc" target="_blank">jieyn72.dothome.co.kr/kcc</a></td>
+                        </tr>
+                        <tr>
+                            <th class="lt">PUBLISHER </th> 
+                            <td><a href="http://jieyn72.dothome.co.kr/Publisher" target="_blank">jieyn72.dothome.co.kr/Publisher</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </footer>
+        
+    </div>
+
+</body>
+</html>

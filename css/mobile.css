@@ -1,0 +1,98 @@
+﻿/* 반응형 작업 */
+@media screen and (max-width:1250px) {
+    .list_werp {width:98%; margin:0 auto;}
+    #Portfolio .port_slider {margin:50px 0px;}
+    #Portfolio .port_slider .img_werp > ul > li {width:48%; margin-left:2%; margin-bottom:2%; height:240px;}
+    #Portfolio .port_slider .img_werp > ul > li a .bg {padding-top:100px;}
+    #Portfolio .port_slider .text_box {padding:70px 30px;}
+    #Portfolio .port_slider .text_box > p {font-size:18px;}
+    #About {padding-top:70px;}
+    #About .flip .box {padding:50px 20px;}
+    #About .flip .box_2 dl dd {font-size:15px;}
+    #About_02 {padding-top:70px;}
+    #About_02 .flip .box {padding:50px 30px;}
+    #About_02 .flip .box_1 h1 {font-size: 35px;}
+    #About_02 .flip .box_2 ul li {font-size:18px;}
+    #About_02 .flip .box_2 .btn {bottom:70px; }
+    #Footer .list_werp {width:90%;}
+}
+
+@media screen and (max-width:960px) {
+    #Header .nav li {width:100px;}
+    #Header {text-align: left; padding-left:10px;}
+    #Portfolio {height: auto;}
+    #Portfolio .port_slider {overflow: visible;}
+    #Portfolio .port_slider > .slider_list > li {display: block; width:100%; margin-bottom:20px;}
+    #Portfolio .port_slider .img_werp > ul > li {width:49%; margin-left:0.5%; margin-right:0.5%; margin-bottom:1%; height:250px; overflow: hidden; position:relative;}
+    #Portfolio .port_slider .img_werp > ul > li:nth-child(1) {margin-left:0.5%;}
+    #Portfolio .port_slider .img_werp > ul > li:nth-child(3) {margin-left:0.5%;}
+    #Portfolio .port_slider .img_werp {width:100%;}
+    #Portfolio .port_slider .text_box {width:100%; overflow: visible;}
+    #Portfolio .port_slider .text_box {padding:30px 30px;}
+    #Portfolio .port_slider .text_box .text_02 {margin-bottom:100px;}
+    #Portfolio .port_slider {margin:50px 0px; overflow:none; height: auto;}
+    #Portfolio .port_slider .btn {bottom:50px;}
+    #Portfolio .port_slider .btn_icon {display: none;}
+    #Portfolio .port_slider .move {display: none;}
+    #Portfolio .port_slider .slider_list {display:block; width:100%;}
+    #About {height: auto;}
+    #About .flip {display: block;}
+    #About .flip .box {width:99%; margin-left:0.5%; margin-bottom:50px; padding:20px 30px;}
+    #About .flip .box:nth-child(1) {margin-right:0.5%;}
+    #About .flip .box_2 dl {font-size:20px; margin-top:30px;}
+    #About .flip .box_2 dl dd {font-size: 18px;}
+    #About_02 {height: auto; padding-top:0px;}
+    #About_02 .flip {display: block;}
+    #About_02 .flip .box {width:99%; margin-left:0.5%; margin-bottom:50px;}
+    #About_02 .flip .box:nth-child(1) {margin-right:0.5%;}
+    #About_02 .flip .box_2 ul {margin-bottom:100px;}
+}
+
+@media screen and (max-width:768px) {
+    #Main  h1 {font-size: 60px;}
+    #Portfolio .port_slider > .slider_list > li {margin-bottom:30px;}
+    #Portfolio .port_slider .img_werp > ul > li {height:200px;}
+    #Portfolio .port_slider .img_werp {margin-bottom:20px;}
+    #About .flip .box_2 dl {font-size:17px;}
+    #About .flip .box_2 dl dd {font-size:15px;}
+}
+
+@media screen and (max-width:640px) {
+    #Portfolio .port_slider .img_werp > ul > li {height:150px;}
+    #Portfolio .port_slider .text_box > p {font-size:16px;}
+    #Portfolio .port_slider .text_box h1.title .point {font-size:20px;}
+
+    /* 여기부터 more 시작 */
+    #Header .nav {display: none;}
+    #Header {text-align: center; padding-left:0px;}
+    #Header .more {display: block;}
+}
+
+@media screen and (max-width:480px) {
+    #Main  h1 {font-size: 45px; padding-left:10px; padding-right:10px;}
+    #Portfolio .port_slider .text_box {padding:20px 20px;}
+    #Portfolio .port_slider .text_box h1.title {font-size: 30px;}
+    #Portfolio .port_slider .text_box h1.title .point {font-size:15px;}
+    #Portfolio .port_slider .text_box > p {font-size:15px; line-height:25px;}
+    #Portfolio .port_slider .img_werp > ul > li {height:100px;}
+    #Portfolio .port_slider .img_werp > ul > li a .bg {display: none; font-size:15px; padding-top:40px;}
+    .btn {width:150px;}
+    .btn a {font-size:14px;}
+    #About .flip .box h1 {font-size:30px;}
+    .graph_werp ul li h2 {font-size:16px;}
+    .graph_werp ul li > .graph > div {text-indent:-9999px; }
+    .graph_werp ul li > .graph > div > .percent {text-indent:0px; font-size:13px;}
+    #About .flip .box_2 dl dd {font-size:14px;}
+    #About_02 .flip .box img {width:200px;}
+    #About_02 .flip .box_2 ul li {font-size:14px;}
+    #Footer .list_werp {width:95%;}
+    #Footer {padding:20px 10px;}
+    #Footer table th {display: none;}
+    #Footer table td a {color:#2BA8D5; font-size:12px;}
+}
+
+@media screen and (max-width:360px) {
+    #Main  h1 {font-size: 35px;}
+    #Portfolio .port_slider .img_werp > ul > li {height:70px;}
+    #About_02 .flip .box_1 h1 {font-size: 30px;}
+}

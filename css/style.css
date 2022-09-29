@@ -1,0 +1,108 @@
+body {max-width: 100%; overflow-x: hidden; background-color:#131418; position:relative;}
+.werp {width:100%; background:#111;}
+.list_werp {width:95%; margin:0 auto;}
+
+#Header {width:100%; height:50px; background-color: rgba(19,20,24,0.8); border-bottom: 1px solid #fff; position:fixed; text-align: center; z-index:10; display: flex;}
+#Header .icon {width:100%; margin-top:7px;}
+#Header .icon img {width:33px;}
+#Header .nav {position:absolute; top:14px; right:0; display: flex;}
+#Header .nav li {width:120px; text-align: center;}
+#Header .nav li a {color:#fff; font-weight:bold; font-size:15px; letter-spacing:1px;}
+#Header .nav li a:hover {color:#FFA602;}
+#Header .more {display: none; position:absolute; top:4px; right:5px; cursor: pointer;}
+#Header .more img {width:40px;}
+
+.more_mune {width:100%; height:100vh; background-color:#131418; z-index:50; position:fixed; top:0; right:-100%; transition:all 0.1s;}
+.more_mune > ul {width:100%; padding:70px 50px 0 50px; color:#cdcdcd;}
+.more_mune > ul > li {font-size:25px; margin-top:20px; color:#FFA602; font-weight: bold; cursor: pointer;}
+.more_mune > ul > li > a {color:#FFA602; font-size:25px; font-weight: bold;}
+.more_mune a {color:#cdcdcd;}
+.more_mune .sub_menu li a {font-size:18px;}
+.more_mune .sub_menu {display: none;}
+.more_mune .close {position:absolute; cursor: pointer; right:7px; top:7px;}
+.more_mune .close img {width:33px;}
+
+/* Main */
+#Main {width:100%; height: 100vh; display:flex; justify-content:center; align-items:center;}
+#Main  h1 {font-size: 80px; width:100%; text-align: center; background-image: -webkit-linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-animation: hue 3s infinite linear;}
+@-webkit-keyframes hue {
+from {-webkit-filter: hue-rotate(0deg);}
+to {-webkit-filter: hue-rotate(-360deg);}
+}
+
+/* Portfolio */
+#Portfolio {width:100%; height: 100vh; padding-top:50px;}
+#Portfolio .port_slider {position: relative; width:100%; height:100vh; margin:0 auto; margin:50px; overflow: hidden;}
+#Portfolio .port_slider > .slider_list {display: flex; width:300%;}
+#Portfolio .port_slider > .slider_list > li {display: flex; flex-direction: row; flex-wrap: wrap;  width:33.33%;}
+#Portfolio .port_slider .img_werp {width:50%;}
+#Portfolio .port_slider .img_werp > ul {display: flex; flex-direction: row; flex-wrap: wrap;  width:100%;}
+#Portfolio .port_slider .img_werp > ul > li {width:49%; margin-left:1%; margin-bottom:1%; height:270px; overflow: hidden; position:relative;}
+#Portfolio .port_slider .img_werp > ul > li:nth-child(1) {margin-left:0;}
+#Portfolio .port_slider .img_werp > ul > li:nth-child(3) {margin-left:0;}
+#Portfolio .port_slider .img_werp > ul > li a {display: block; width:100%; height:100%; position: relative;}
+#Portfolio .port_slider .img_werp > ul > li a img {width:100%; transition: all 0.2s linear;}
+#Portfolio .port_slider .img_werp > ul > li a .bg {display: none; position:absolute; left:0; top:0; width:100%; height:100%; background-color: rgba(0,0,0,0.3); z-index:10; color:#fff; text-align: center; font-size:20px; padding-top:140px;}
+#Portfolio .port_slider .img_werp > ul > li a:hover img {transform: scale(1.05);}
+#Portfolio .port_slider .img_werp > ul > li a:hover .bg {display: block;}
+#Portfolio .port_slider .text_box {position: relative; width:50%; padding:100px 50px; background-color: rgba(0,0,0,0.3); color:#fff;  border-radius:20px; overflow: hidden;}
+#Portfolio .port_slider .text_box h1.title {font-size: 36px;}
+#Portfolio .port_slider .text_box h1.title .point {color:#FFA602; font-size:25px;}
+#Portfolio .port_slider .text_box > p {font-size:20px; line-height:30px; margin-top:20px;}
+
+.btn {position:absolute; bottom:100px; width: 200px; background: #131418; text-align: center; color: #cdcdcd; display: block;}
+.btn a {display: block; color:#cdcdcd; font-size:15px; border: 2px solid #cdcdcd; padding: 5% 14%; position: relative; z-index: 1; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; font-weight:bold;}
+.btn a:after {content: ""; width: 0%; height: 100%; top: 0; position: absolute; left: 0; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; background: #fff;}
+.btn a:hover {color: #000;}
+.btn a:hover:after {width: 100%; z-index: -1;}
+
+#Portfolio .port_slider .btn_icon {position: absolute; display: flex; margin-top:20px;}
+#Portfolio .port_slider .btn_icon li {width:50px; height:4px; background-color:#cdcdcd; margin-right:10px; cursor: pointer;}
+#Portfolio .port_slider .btn_icon li.on {background-color:#FFA602;}
+#Portfolio .port_slider .move {position: absolute; right:50px; display: flex;}
+#Portfolio .port_slider .move p {cursor: pointer; margin-top:20px;}
+#Portfolio .port_slider .move p > img{width:36px;}
+#Portfolio .port_slider .prev {margin-right:20px;}
+#Portfolio .port_slider .prev img {transform: rotate(-180deg);}
+
+/* About */
+#About {width:100%; height: 100vh; padding-top:150px;}
+#About .flip {display: flex;}
+#About .flip .box {width:48%; background-color: rgba(0,0,0,0.3);border-radius: 20px; padding:70px 50px; color:#fff;}
+#About .flip .box:nth-child(1) {margin-right:2%;}
+#About .flip .box h1 {font-size:36px; text-align: center;}
+.graph_werp ul li {margin-top:20px;}
+.graph_werp ul li h2 {font-size:18px; margin-bottom: 10px;}
+.graph_werp ul li .graph {width:100%; height: 30px; line-height:30px;}
+.gradient_border {--borderWidth: 3px; background:#131418; position: relative; border-radius: var(--borderWidth);}
+.gradient_border:after { content: ''; position: absolute; z-index: -1; top: calc(-1 * var(--borderWidth)); left: calc(-1 * var(--borderWidth)); height: calc(100% + var(--borderWidth) * 2); width: calc(100% + var(--borderWidth) * 2); background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); border-radius: calc(1.5 * var(--borderWidth)); animation: animatedgradient 3s ease alternate infinite; background-size: 300% 300%;
+}
+@keyframes animatedgradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.graph_werp ul li .graph_01 {width:90%; background-color:#373E3D; padding-left:10px; color:#fff; font-size:14px;}
+.graph_werp ul li .graph_02 {width:85%; background-color:#373E3D; padding-left:10px; color:#fff; font-size:14px;}
+.graph_werp ul li .graph_03 {width:95%; background-color:#373E3D; padding-left:10px; color:#fff; font-size:14px;}
+.graph_werp ul li .graph_04 {width:85%; background-color:#373E3D; padding-left:10px; color:#fff; font-size:14px;}
+.graph_werp ul li .graph .percent {position: absolute; right:10px;}
+#About .flip .box_2 dl {font-size:18px; margin-top:30px;}
+#About .flip .box_2 dl dd {font-size: 16px; margin-bottom: 10px; margin-top: 10px;}
+
+#About_02 {width:100%; height: 100vh; padding-top:120px;}
+#About_02 .flip {display: flex;}
+#About_02 .flip .box {width:48%; background-color: rgba(0,0,0,0.3); border-radius: 20px; padding:70px 50px; color:#fff;}
+#About_02 .flip .box:nth-child(1) {margin-right:2%;}
+#About_02 .flip .box_1 {text-align: center; font-size:30px;}
+#About_02 .flip .box_2 ul li {position: relative; font-size:20px; letter-spacing:1px; margin-top:15px;}
+#About_02 .flip .box_2 ul li a {color:#fff;}
+#About_02 .flip .box_2 ul li a:hover {color:#2BA8D5;}
+
+/* Footer */
+#Footer {width:100%; background-color:#000; color:#CBCBCB; padding: 50px 0px;}
+#Footer table {font-size:13px; letter-spacing:1px;}
+#Footer table td {margin-top:7px; padding:5px 0;}
+#Footer table td a {font-size:13px;color:#CBCBCB;}
+#Footer table td a:hover {color:#2BA8D5;}
